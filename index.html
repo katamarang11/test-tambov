@@ -716,6 +716,49 @@
       </section>
     </main>
 
+    <div class="modal-window modal-window__hidden">
+      <div class="modal-window__title">
+        <p>Оставить заявку</p>
+        <button type="button" class="modal__btn-close">
+          <svg
+            width="21"
+            height="21"
+            viewBox="0 0 21 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect
+              x="0.000244141"
+              y="1.44824"
+              width="2.04815"
+              height="27.65"
+              rx="1"
+              transform="rotate(-45 0.000244141 1.44824)"
+              fill="#A4B3D4" />
+            <rect
+              width="2.04815"
+              height="27.65"
+              rx="1"
+              transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 20.9998 1.44824)"
+              fill="#A4B3D4" />
+          </svg>
+        </button>
+      </div>
+
+      <form>
+        <ul class="modal__wrapper">
+          <li><input class="modal__input" type="text" name="name" placeholder="ФИО" /></li>
+          <li><input class="modal__input" type="email" name="email" placeholder="Почта" /></li>
+          <li><input class="modal__input" type="tel" name="tel" placeholder="Телефон" /></li>
+        </ul>
+        <button class="modal__btn" type="submit">Отправить</button>
+      </form>
+
+      <p class="modal__info">
+        Нажимая на кнопку «Отправить» вы соглашаетесь с
+        <a class="modal__info-link" href="#!">Политикой обработки персональных данных</a>
+      </p>
+    </div>
+
     <script src="./menu.js"></script>
   </body>
 </html>
