@@ -397,6 +397,14 @@
     right: 45px;
   }
 }
+@media (max-width: 429px) {
+  .we-offer__info .we-offer__btn {
+    padding: 24px 25px;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+}
 .problem-solution {
   display: -webkit-box;
   display: -ms-flexbox;

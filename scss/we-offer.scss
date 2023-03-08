@@ -235,3 +235,10 @@
     right: 45px;
   }
 }
+
+@media (max-width: 429px) {
+  .we-offer__info .we-offer__btn {
+    padding: 24px 25px;
+    column-gap: 10px;
+  }
+}
