@@ -1,0 +1,237 @@
+.we-offer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 126px;
+}
+
+.we-offer__info {
+  max-width: 642px;
+
+  .info__title {
+    color: #2a2e34;
+    font-size: 59px;
+    font-family: "Geometric Sans Serif v1", sans-serif;
+    line-height: 60px;
+    margin-bottom: 39px;
+
+    .info__title_color {
+      color: #206ef8;
+    }
+  }
+
+  .info-row__advantages {
+    display: flex;
+    column-gap: 36px;
+    margin-bottom: 63px;
+
+    .info__advantages {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+
+      .advantages__text {
+        font-size: 22px;
+        font-weight: 500;
+        color: #2a2e34;
+        line-height: 27px;
+      }
+    }
+  }
+
+  .we-offer__btn {
+    display: inline-flex;
+    column-gap: 15px;
+
+    color: #206ef8;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+
+    border: 2px solid #206ef8;
+    border-radius: 54px;
+    padding: 24px 37px;
+
+    transition: 0.4s;
+
+    svg path {
+      fill: #206ef8;
+      transition: 0.4s;
+    }
+
+    &:hover {
+      color: #ffffff;
+      background-color: #206ef8;
+      transition: 0.4s;
+    }
+
+    &:hover svg path {
+      fill: #ffffff;
+      transition: 0.4s;
+    }
+  }
+}
+
+.we-offer__pictures {
+  position: relative;
+  width: 508px;
+  height: 491px;
+
+  .pictures-ок__position {
+    position: absolute;
+    top: -62px;
+    left: 168px;
+    z-index: 5;
+  }
+
+  .pictures-lets-do__position_2 {
+    position: absolute;
+    bottom: 91px;
+    right: -3px;
+  }
+
+  .pictures-lets-do__position_1 {
+    position: absolute;
+    top: 102px;
+    right: -2px;
+    z-index: 6;
+  }
+
+  .pictures-lets-do__position_3 {
+    position: absolute;
+    // bottom: 154px;
+    // right: -214px;
+
+    filter: blur(80px);
+    opacity: 0.5;
+    bottom: 379px;
+    right: -30px;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: #005cff;
+  }
+
+  .pictures-lets-do__position_4 {
+    position: absolute;
+    bottom: 56px;
+    right: 205px;
+  }
+
+  .we-offer__stars-to-the-right {
+    position: absolute;
+    top: 27px;
+    right: -9px;
+    z-index: 1;
+  }
+}
+
+// ===================================================
+
+@media (max-width: 1214px) {
+  .we-offer__info {
+    max-width: 492px;
+  }
+
+  .we-offer__info .info__title {
+    font-size: 45px;
+  }
+
+  .we-offer__info .info-row__advantages {
+    flex-direction: column-reverse;
+    row-gap: 22px;
+  }
+
+  .we-offer__pictures .pictures-lets-do__position_2 {
+    right: -30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .we-offer__pictures .pictures-lets-do__position_2 {
+    right: -19px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .we-offer {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+
+  .we-offer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .we-offer__info .info__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .we-offer__pictures .pictures-ок__position {
+    width: 140px;
+    height: 308px;
+    top: -40px;
+    left: 177px;
+  }
+
+  .we-offer__pictures .pictures-lets-do__position_2 {
+    width: 158px;
+    height: 83px;
+    right: 78px;
+    bottom: 215px;
+  }
+
+  .we-offer__pictures .pictures-lets-do__position_1 {
+    width: 300px;
+    height: 109px;
+    top: 93px;
+    right: 89px;
+  }
+
+  .we-offer__pictures .pictures-lets-do__position_4 {
+    bottom: 122px;
+    right: 146px;
+  }
+
+  .we-offer__pictures .pictures-lets-do__position_3 {
+    right: 38px;
+    bottom: 381px;
+  }
+
+  .we-offer__pictures .we-offer__stars-to-the-right {
+    top: 20px;
+    right: 85px;
+  }
+
+  .we-offer__info .info__title {
+    font-size: 24px;
+    width: 335px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 507px) {
+  .we-offer__pictures {
+    width: 350px;
+  }
+
+  .we-offer__pictures .pictures-ок__position {
+    left: 85px;
+  }
+
+  .we-offer__pictures .pictures-lets-do__position_2 {
+    right: 26px;
+  }
+
+  .we-offer__pictures .pictures-lets-do__position_1 {
+    right: 33px;
+  }
+
+  .we-offer__pictures .we-offer__stars-to-the-right {
+    right: 45px;
+  }
+}

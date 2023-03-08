@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/geometric-sans-serif-v1");
+
+@import "./header.scss";
+@import "./we-offer.scss";
+@import "./problem-solution.scss";
+@import "./grocery.scss";
+@import "./stages-of-work.scss";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.body-scroll-no {
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1215px;
+  margin: 0 auto;
+  padding: 0 31px;
+}
+
+@media (max-width: 1214px) {
+  .wrapper {
+    max-width: 1025px;
+    padding: 0 30px;
+  }
+}

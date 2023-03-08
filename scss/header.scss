@@ -1,0 +1,159 @@
+.header__menu {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  height: 82px;
+  padding-top: 16px;
+  margin-bottom: 213px;
+}
+
+.header__menu-btn_open {
+  display: none;
+}
+
+.header__menu-btn_close {
+  display: none;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.header__logo {
+  margin-right: 112px;
+}
+
+.header__nav {
+  margin-right: 111px;
+
+  & ul {
+    display: flex;
+
+    & li:not(:last-child) {
+      margin-right: 57px;
+    }
+
+    & .header__nav--link {
+      color: #2a2e34;
+      transition: 0.4s;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+
+      &:hover {
+        color: #206ef8;
+        transition: 0.4s;
+      }
+    }
+
+    & .header__nav--link_active {
+      color: #206ef8;
+    }
+  }
+}
+
+.header__order-btn {
+  padding: 15px 32px;
+  border-radius: 54px;
+  background: #f2f6fe;
+  color: #206ef8;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  transition: 0.4s;
+
+  &:hover {
+    transition: 0.4s;
+    color: #f2f6fe;
+    background-color: #206ef8;
+  }
+}
+
+.header__nav-hidden {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 99;
+  background-color: white;
+  width: 100vw;
+  height: 520px;
+
+  box-shadow: 0px 300px 20px rgb(0 0 0 / 8%);
+
+  & ul {
+    margin-bottom: 64px;
+  }
+
+  .header__nav--link-hidden {
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 100vw;
+    padding-right: 100vw;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #f2f2f2;
+    display: inline-block;
+    color: #2a2e34;
+  }
+}
+
+.header__nav-hidden_none {
+  display: flex;
+}
+
+@media (max-width: 1214px) {
+  .header__logo {
+    margin-right: 50px;
+  }
+
+  .header__nav {
+    margin-right: 50px;
+  }
+
+  .header__nav ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header__wrapper {
+    justify-content: space-between;
+  }
+
+  .header__menu {
+    padding-top: 30px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__order-btn {
+    display: none;
+  }
+
+  .header__menu-btn_open {
+    display: block;
+  }
+
+  .header__menu-btn_close {
+    display: block;
+  }
+
+  .header__order-btn_hidden {
+    display: block;
+  }
+
+  .header__menu-btn_hide {
+    display: none;
+  }
+}
