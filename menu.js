@@ -33,6 +33,5 @@ modalBtnClose.addEventListener('click', function () {
 });
 
 headerOrderBtnHidden.addEventListener('click', function () {
-  console.log('4444');
   modalWindow.classList.remove('modal-window__hidden');
 });

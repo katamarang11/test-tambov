@@ -994,6 +994,23 @@
   display: none;
 }
 
+@media (max-width: 900px) {
+  .modal-window {
+    left: 15%;
+    right: 15%;
+  }
+}
+@media (max-width: 600px) {
+  .modal-window {
+    left: 4%;
+    right: 4%;
+  }
+}
+@media (max-width: 500px) {
+  .modal-window {
+    height: 615px;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
 }
