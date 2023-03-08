@@ -5,6 +5,7 @@ const body = document.querySelector('.body');
 
 const headerOrderBtn = document.querySelector('.header__order-btn');
 const modalBtnClose = document.querySelector('.modal__btn-close');
+const headerOrderBtnHidden = document.querySelector('.header__order-btn_hidden');
 const modalWindow = document.querySelector('.modal-window');
 
 headerMenuBtnOpen.addEventListener('click', function () {
@@ -23,9 +24,15 @@ headerMenuBtnClose.addEventListener('click', function () {
 
 
 headerOrderBtn.addEventListener('click', function () {
+  console.log('4444');
   modalWindow.classList.remove('modal-window__hidden');
 });
 
 modalBtnClose.addEventListener('click', function () {
   modalWindow.classList.add('modal-window__hidden');
+});
+
+headerOrderBtnHidden.addEventListener('click', function () {
+  console.log('4444');
+  modalWindow.classList.remove('modal-window__hidden');
 });
