@@ -6,6 +6,7 @@ const body = document.querySelector('.body');
 const headerOrderBtn = document.querySelector('.header__order-btn');
 const modalBtnClose = document.querySelector('.modal__btn-close');
 const headerOrderBtnHidden = document.querySelector('.header__order-btn_hidden');
+const modalWindowBackground = document.querySelector('.modal-window__background');
 const modalWindow = document.querySelector('.modal-window');
 
 headerMenuBtnOpen.addEventListener('click', function () {
@@ -24,14 +25,19 @@ headerMenuBtnClose.addEventListener('click', function () {
 
 
 headerOrderBtn.addEventListener('click', function () {
-  console.log('4444');
   modalWindow.classList.remove('modal-window__hidden');
+  modalWindowBackground.classList.remove('modal-window__hidden');
+  body.classList.add('body-scroll-no');
 });
 
 modalBtnClose.addEventListener('click', function () {
   modalWindow.classList.add('modal-window__hidden');
+  modalWindowBackground.classList.add('modal-window__hidden');
+  body.classList.remove('body-scroll-no');
 });
 
 headerOrderBtnHidden.addEventListener('click', function () {
   modalWindow.classList.remove('modal-window__hidden');
+  modalWindowBackground.classList.remove('modal-window__hidden');
+  body.classList.add('body-scroll-no');
 });
